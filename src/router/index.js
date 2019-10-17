@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import BootstrapVue from 'bootstrap-vue'
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 
