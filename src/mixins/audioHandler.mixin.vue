@@ -5,6 +5,7 @@ export default {
     playSound(sound) {
       if (sound) {
         const audio = new Audio(sound);
+        audio.type = 'audio/mpeg';
         audio.play();
       }
     },

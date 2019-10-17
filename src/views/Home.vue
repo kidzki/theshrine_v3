@@ -2,7 +2,7 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <player/>
+    <player v-for="(sound, index) in sounds" :key="index" :soundfile="sound"/>
   </div>
 </template>
 
@@ -27,11 +27,8 @@ export default {
   },
   methods: {
     importAll(data) {
-      // r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })));
-      console.log(data);
       data.keys().forEach((key) => {
-        console.log(key);
-        this.sounds.push(key)
+        this.sounds.push(key);
       });
     },
   },
