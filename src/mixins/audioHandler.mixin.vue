@@ -1,13 +1,13 @@
 <script>
 export default {
-  name: "audioHandlerMixin",
+  name: 'audioHandlerMixin',
   methods: {
     playSound(sound) {
       if (sound) {
-        let audio = new Audio(sound);
+        const audio = new Audio(sound);
         audio.play();
       }
-    }
-  }
+    },
+  },
 };
 </script>
