@@ -6,8 +6,6 @@ export default {
       if (filename) {
         /* eslint-disable-next-line */
         const audio = new Audio(require('@/assets/sounds/' + filename));
-        console.log(audio);
-        console.log(filename);
         audio.type = 'audio/mpeg';
         audio.play();
       }
