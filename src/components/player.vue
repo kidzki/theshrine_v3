@@ -7,7 +7,7 @@
       >
         <span class="fa fa-play-circle-o">{{ soundfile }}</span>
       </button>
-      Play Air Plane Ding
+      {{ soundfile }}
     </label>
   </div>
 </template>
