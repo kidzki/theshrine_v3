@@ -1,9 +1,38 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/bootstrap-vue/src/index.scss';
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 
 @import 'scss/variables.scss';
 @import 'scss/mixins.scss';
 
 body {
-    background: black;
+    @font-face {
+        font-family: 'VT323';
+        src: url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+    }
+    font-family: 'VT323', Arial;
+    text-align: center;
+    background: url('assets/img/chrome-bg.jpg') no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.soundboard {
+    padding: 40px;
+    width: 85vw;
+    height: 85vh;
+    box-shadow: 0 0 1rem 0 rgba($color-black, .2);   
+    border-radius: 5px;
+    background-color: rgba($color-white, .15);
+    backdrop-filter: blur(5px);
+    overflow: auto;
+}
+
+h1 {
+    color: red;
+    font-size: 5em;
 }

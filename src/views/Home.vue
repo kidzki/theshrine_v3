@@ -1,14 +1,18 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <player v-for="(sound, index) in sounds" :key="index" :soundfile="sound"/>
+  <div class="fluid-container">
+    <div class="row">
+      <div class="col-12">
+        <div class="soundboard">
+          <h1>SvenPanel 3.0</h1>
+          <player v-for="(sound, index) in sounds" :key="index" :soundfile="sound"/>
+        </div>
+        </div>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
 import Player from '@/components/player.vue';
 
 export default {
@@ -19,7 +23,6 @@ export default {
     };
   },
   components: {
-    HelloWorld,
     Player,
   },
   mounted() {
