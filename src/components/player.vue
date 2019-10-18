@@ -5,7 +5,7 @@
         class="btn btn-primary btn-sm"
         @click.prevent="playSound(soundfile)"
       >
-        <span class="fa fa-play-circle-o">fal fa-truck-monster</span>
+        <span class="fa fa-play-circle-o">{{ soundfile }}</span>
       </button>
       Play Air Plane Ding
     </label>
