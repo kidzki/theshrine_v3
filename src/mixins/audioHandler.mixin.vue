@@ -2,9 +2,12 @@
 export default {
   name: 'audioHandlerMixin',
   methods: {
-    playSound(sound) {
-      if (sound) {
-        const audio = new Audio(sound);
+    playSound(filename) {
+      if (filename) {
+        /* eslint-disable-next-line */
+        const audio = new Audio(require('@/assets/sounds/' + filename));
+        console.log(audio);
+        console.log(filename);
         audio.type = 'audio/mpeg';
         audio.play();
       }

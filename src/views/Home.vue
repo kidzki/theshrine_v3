@@ -28,7 +28,7 @@ export default {
   methods: {
     importAll(data) {
       data.keys().forEach((key) => {
-        this.sounds.push(key);
+        this.sounds.push(key.split('./')[1]);
       });
     },
   },
