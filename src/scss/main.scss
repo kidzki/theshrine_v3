@@ -1,0 +1,27 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+
+@import 'scss/variables.scss';
+@import 'scss/mixins.scss';
+@import 'scss/soundboard.scss';
+
+body {
+    @font-face {
+        font-family: 'VT323';
+        src: url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+    }
+    font-family: 'VT323', Arial;
+    text-align: center;
+    background: url('assets/img/chrome-bg.jpg') no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h1 {
+    color: $color-red;
+    font-size: 5em;
+}

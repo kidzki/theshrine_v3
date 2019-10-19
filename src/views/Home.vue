@@ -1,18 +1,35 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="fluid-container py-4">
+    <div class="row">
+      <div class="col-12">
+        <div class="soundboard">
+          <h1 class="mb-4">SvenPanel 3.0</h1>
+          <div class="row">
+            <player v-for="(sound, index) in sounds"
+            :key="index"
+            :soundfile="sound.file"
+            :soundname="sound.name"/>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import Player from '@/components/player.vue';
+import soundmap from '@/assets/json/sounds.json';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    Player,
+  },
+  computed: {
+    sounds() {
+      return soundmap.map(item => item);
+    },
   },
 };
 </script>
