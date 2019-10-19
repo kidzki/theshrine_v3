@@ -4,6 +4,7 @@
 
 @import 'scss/variables.scss';
 @import 'scss/mixins.scss';
+@import 'scss/soundboard.scss';
 
 body {
     @font-face {
@@ -17,22 +18,10 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    
-}
-
-.soundboard {
-    padding: 40px;
-    width: 85vw;
-    height: 85vh;
-    box-shadow: 0 0 1rem 0 rgba($color-black, .2);   
-    border-radius: 5px;
-    background-color: rgba($color-white, .15);
-    backdrop-filter: blur(5px);
-    overflow: auto;
+    height: 100%;
 }
 
 h1 {
-    color: red;
+    color: $color-red;
     font-size: 5em;
 }

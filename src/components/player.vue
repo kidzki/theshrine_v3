@@ -1,14 +1,10 @@
 <template>
-  <div>
-    <label>
-      <button
-        class="btn btn-primary btn-sm"
-        @click.prevent="playSound(soundfile)"
-      >
-        <span class="fa fa-play-circle-o">{{ soundfile }}</span>
-      </button>
-      Play Air Plane Ding
+  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 mb-3 soundboard__item"
+   @click.prevent="playSound(soundfile)">
+    <label class="soundboard__label mb-2">
+      {{ soundname }}
     </label>
+    <button class="soundboard__knob"></button>
   </div>
 </template>
 
@@ -20,6 +16,7 @@ export default {
   mixins: [audioHandler],
   props: {
     soundfile: { type: String, required: true },
+    soundname: { type: String, required: true },
   },
 };
 </script>
