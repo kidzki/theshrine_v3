@@ -12,6 +12,10 @@
         border-radius: 3px;
         border: 0.4rem outset rgba($color-shadow, 0.25);
         background-color: $color-black;
+        
+        @include xs() {
+            font-size: 3.5rem;
+        }
     }
 
     &__item {
