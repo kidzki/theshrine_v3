@@ -13,6 +13,7 @@
         </div>
       </div>
     </div>
+    <p class="made">This PWA is made with ❤ and hosted on <a href="https://github.com/kidzki/theshrine_v3">Github</a></p>
   </div>
 </template>
 
