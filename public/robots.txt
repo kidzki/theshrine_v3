@@ -1,3 +1,6 @@
-user-agent: *
+User-agent: Googlebot
+Allow: /
+
+User-agent: *
 Allow : /$
 Disallow: /
