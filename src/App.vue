@@ -16,7 +16,6 @@ export default {
     meta: [
       { httpEquiv: 'Content-Type', content: 'text/html; charset=utf-8' },
       { name: 'application-name', content: 'SVENPANEL - TheShrine' },
-      { name: 'description', content: 'A description of the page', id: 'desc' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'description', content: 'GUDE LAUNE LEUDE - HIER IST DAS NEUE SVENPANEL SOUNDBOARD.' },
       // OpenGraph data (Most widely used)
