@@ -3,4 +3,4 @@ Allow: /
 
 User-agent: *
 Allow : /$
-Disallow: /
+Disallow: /*.mp3$
