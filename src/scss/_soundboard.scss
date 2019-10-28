@@ -30,10 +30,10 @@
                     -1px 0 8px $color-red,
                     1px 0 8px $color-darkred;
             }
-            .soundboard__label {
-                border-style: inset;
-                border-color: rgba($color-grey,.75);
-            }
+            // .soundboard__label {
+            //     border-style: inset;
+            //     border-color: rgba($color-grey,.75);
+            // }
         }
     }
     &__knob {
@@ -68,6 +68,6 @@
         text-transform: uppercase;
         font-size: 1.3rem;
         user-select: none;
-        cursor: pointer;
+        // cursor: pointer;
     }
 }
