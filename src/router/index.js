@@ -9,6 +9,11 @@ const routes = [
     name: 'home',
     component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue'),
   },
+  {
+    path: '/next-generation',
+    name: 'nx',
+    component: () => import(/* webpackChunkName: "home" */ '../views/NX.vue'),
+  },
 ];
 
 const router = new VueRouter({
