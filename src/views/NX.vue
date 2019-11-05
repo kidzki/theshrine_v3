@@ -23,7 +23,7 @@ import Player from '@/components/player.vue';
 import soundmap from '@/assets/json/next-generation.json';
 
 export default {
-  name: 'home',
+  name: 'nx',
   components: {
     Player,
   },
