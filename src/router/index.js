@@ -10,7 +10,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue'),
   },
   {
-    path: '/next-generation',
+    path: '/next-generation/',
     name: 'nx',
     component: () => import(/* webpackChunkName: "nx" */ '../views/NX.vue'),
   },
