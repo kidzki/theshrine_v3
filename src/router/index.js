@@ -12,7 +12,7 @@ const routes = [
   {
     path: '/next-generation',
     name: 'nx',
-    component: () => import(/* webpackChunkName: "home" */ '../views/NX.vue'),
+    component: () => import(/* webpackChunkName: "nx" */ '../views/NX.vue'),
   },
 ];
 
